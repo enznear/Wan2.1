@@ -391,6 +391,12 @@ DASH_API_KEY=your_key python i2v_14B_singleGPU.py --prompt_extend_method 'dashsc
 # if one uses both 480P and 720P models in gradio
 DASH_API_KEY=your_key python i2v_14B_singleGPU.py --prompt_extend_method 'dashscope' --ckpt_dir_480p ./Wan2.1-I2V-14B-480P --ckpt_dir_720p ./Wan2.1-I2V-14B-720P
 ```
+##### (5) Combined Text/Image-to-Video Gradio demo
+```sh
+cd gradio
+python t2v_i2v_14B_singleGPU.py --ckpt_dir_t2v ./Wan2.1-T2V-14B --ckpt_dir_i2v_720p ./Wan2.1-I2V-14B-720P
+```
+
 
 
 #### Run First-Last-Frame-to-Video Generation
